@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace = "com.kotlinBasics"
+    namespace = "com.kotlinbasics"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.kotlinBasics"
-        minSdk = 26
+        applicationId = "com.kotlinbasics"
+        minSdk = 27
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -45,6 +45,7 @@ dependencies {
     implementation("androidx.core:core-ktx:1.15.0")
     //implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
+
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)

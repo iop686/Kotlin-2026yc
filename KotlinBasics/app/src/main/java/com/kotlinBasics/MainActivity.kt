@@ -1,4 +1,4 @@
-package com.kotlinBasics
+package com.kotlinbasics
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.kotlinBasics.ui.theme.KotlinBasicsTheme
+import com.kotlinbasics.ui.theme.KotlinBasicsTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             KotlinBasicsTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
@@ -29,18 +29,18 @@ class MainActivity : ComponentActivity() {
         }
         week03Variables()
     }
+}
 
-    private fun week03Variables() {
-        println("Week 03: Variables")
+private fun week03Variables() {
+    println("Week 03 : Variables")
 
-        val courseName - "Mobile Programming" //java final keyword
-        //courseName = "Datastructure" //error
+    val courseName = "Mobile Programming"  // Java final keyword
+    //courseName = "DataStructure"  // error
 
-        var week =2
-        week = 3
-        println("Course : $courseName")
-        println("Week : $week")
-    }
+    var week = 2
+    week = 3
+    println("Course : $courseName")
+    println("Week : $week")
 }
 
 @Composable

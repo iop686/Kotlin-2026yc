@@ -1,4 +1,4 @@
-package com.kotlinBasics.ui.theme
+package com.kotlinbasics.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
