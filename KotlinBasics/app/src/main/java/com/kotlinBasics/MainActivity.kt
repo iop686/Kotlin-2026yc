@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun week03Variables() {
-        println("Week 02: Variables")
+        println("Week 03: Variables")
 
         val courseName - "Mobile Programming" //java final keyword
         //courseName = "Datastructure" //error
